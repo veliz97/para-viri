@@ -84,8 +84,9 @@ h1 {
 
 /* 🐱 GATOS */
 .cats-bg {
-  position: relative;
-  margin-top: 15px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
   text-align: center;
   opacity: 0.12;
   font-size: 18px;
