@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  background: linear-gradient(135deg, #f8e8ee, #e8f5e9);
+  color: #2e4d3a;
+  overflow-x: hidden;
+}
+
+/* 🌸 FLORES */
+.flowers {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.flower {
+  position: absolute;
+  bottom: -40px;
+  opacity: 0.14;
+  animation: floatUp linear infinite;
+}
+
+.flower:nth-child(odd) { font-size: 15px; }
+.flower:nth-child(even) { font-size: 17px; }
+
+@keyframes floatUp {
+  0% { transform: translateY(0); opacity: 0; }
+  30% { opacity: 0.14; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+
+/* CONTENIDO */
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #d81b60;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  color: #4a7c59;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* TARJETAS */
+.poem-card {
+  position: relative;
+  background: rgba(255,255,255,0.5);
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+  overflow: hidden;
+}
+
+/* POEMA */
+.poem {
+  white-space: pre-line;
+  line-height: 1.8;
+  font-size: 16px;
+  text-align: left;
+  hyphens: auto;
+}
+
+/* footer */
+.footer {
+  margin-top: 15px;
+  text-align: right;
+  font-style: italic;
+  color: #4a7c59;
+  font-size: 14px;
+}
+
+/* 🐱 GATOS */
+.cats-bg {
+  position: relative;
+  margin-top: 15px;
+  text-align: center;
+  opacity: 0.12;
+  font-size: 18px;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 600px) {
+  .poem { font-size: 15px; }
+
+  .flower:nth-child(odd) { font-size: 13px; }
+  .flower:nth-child(even) { font-size: 15px; }
+}
+
+@media (max-width: 600px) {
+  .cats-bg {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
